@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #030303;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+@layer utilities{
+  .nav{
+    @apply mx-10 md:mx-4 md:first:ml-0 my-4 md:my-0 cursor-pointer text-lg font-medium hover:text-primary/[0.8] hover:scale-110
+  }
+  .btn-outline{
+    @apply border px-4 py-2 font-semibold hover:bg-white hover:text-black
+  }
+  .tokenomics-item{
+   @apply absolute z-10 flex flex-col justify-center initial text-center backdrop-blur py-4 px-8 border border-[#ffffff17] rounded-[35px] bg-transparent w-[150px] md:min-w-[200px]
+  }
+  .content{
+    @apply text-lg mb-4
+  }
+}
+
+.hero-bg {
+  /* height: 100%; */
+  background:linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9));
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.height-0{
+  height: 0 !important;
+}
+
+#contractAdd {
+  background-image: linear-gradient(60deg,rgba(255,255,255,.5),rgba(255,255,255,0));
+  background-clip: text;
+  color: transparent;
+  background: -webkit-linear-gradient(60deg,rgba(255,255,255,.5),rgba(255,255,255,0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes identifier {
+  0% {}
+}
