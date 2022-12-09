@@ -5,7 +5,7 @@ import Tokenomics from './Tokenomics'
 import HowToBuy from './HowToBuy'
 import herobg from '../assets/bg-test.jpg'
 import herologo from '../assets/hero-image.png'
-import dawg from '../assets/dawg3.png'
+import dawg from '../assets/dawg33.png'
 
 
 function Home() {
@@ -21,7 +21,7 @@ function Home() {
                     <Header />
                     <section className='hero-section flex items-center px-2'>
                         <article className='text-center w-full'>
-                            <div className='h-[300px] w-[300px]  rounded-full mx-auto overflow-hidden'>
+                            <div data-aos="fade-up" data-aos-offset="200" className='h-[300px] w-[300px]  rounded-full mx-auto overflow-hidden'>
                                 <img src={herologo} alt="" className='mx-auto h-full'/>
                             </div>
                             <p data-aos="slide-up" className='text-xl md:text-3xl mb-5 font-poppin'>Let’s bring back the sensation of a good old fashioned banger</p>
@@ -37,20 +37,20 @@ function Home() {
             </div>
             <section className='py-[100px] overflow-hidden bg-black/[0.5] px-2'>
                 <div className="container mx-auto">
-                    <h3 className='font-stix text-4xl md:text-[50px] mb-6 text-center text-primary font-semibold'>What up DAWG</h3>
+                    <h3 data-aos='zoom-in' className='font-stix text-4xl md:text-[50px] mb-6 text-center text-primary font-semibold'>What up DAWG</h3>
                     <div className='flex items-center justify-between flex-col-reverse md:flex-row-reverse '>
                         <article className='text-xl shrink-0 md:w-1/2 pl-4'>
-                            <p className='content'>Do you miss the days of up only? Do you miss easy mode? Do you miss barking at the moon?</p>
+                            <p data-aos="fade-in" className='content'>Do you miss the days of up only? Do you miss easy mode? Do you miss barking at the moon?</p>
 
-                            <p className='content'>In my doggy bed, I dream of those days too. But they can be here again, if we all work together.</p>
+                            <p data-aos="fade-in" data-aos-delay="200" className='content'>In my doggy bed, I dream of those days too. But they can be here again, if we all work together.</p>
 
-                            <p className='content'>Let’s bring back the sensation of a good old fashioned banger. The sensation of playing at the park with all our dawg friends to tell them about the next big thing.</p>
+                            <p data-aos="fade-in" data-aos-delay="400" className='content'>Let’s bring back the sensation of a good old fashioned banger. The sensation of playing at the park with all our dawg friends to tell them about the next big thing.</p>
 
-                            <p className='content'>Some of you may remember my last project that went to a high nine figure market cap. Some of you remember how much Eth we all made together. How many bones we were able to stack and bury in the backyard.</p>
+                            <p data-aos="fade-in" data-aos-delay="600" className='content'>Some of you may remember my last project that went to a high nine figure market cap. Some of you remember how much Eth we all made together. How many bones we were able to stack and bury in the backyard.</p>
 
-                            <p className='content'>Sure, those were easier times, I was just a young pup then. But, now, I am wiser, smarter, stronger. And my dawg friends are too. We have the experience, the drive, the tenacity.</p>
+                            <p data-aos="fade-in" data-aos-delay="800" className='content'>Sure, those were easier times, I was just a young pup then. But, now, I am wiser, smarter, stronger. And my dawg friends are too. We have the experience, the drive, the tenacity.</p>
                         </article>
-                        <div className='md:w-1/2 pr-4'>
+                        <div data-aos="slide-up" className='md:w-1/2 pr-4'>
                             <img src={dawg} alt="" />
                         </div>
                     </div>
@@ -61,19 +61,19 @@ function Home() {
             <section id='tokenomics' className='relative bg-bg-image2 mb-[100px] overflow-hidden'>
                 <div className="container text-main-color mx-auto py-[100px]  px-2">
                 <div className='bg-primary/[0.7] h-[682px] w-[682px] rounded-full absolute blur-[400px] -right-[341px] -top-1/2'></div>
-                    <h1 class="font-bold text-4xl mb-4 md:text-[50px] font-stix text-white text-center">Tokenomics</h1>
+                    <h1 data-aos='zoom-in' class="font-bold text-4xl mb-4 md:text-[50px] font-stix text-white text-center">Tokenomics</h1>
 
                     <div className=' gap-4 z-10 p-8 md:py-16 px-8 overflow-hidden text-center'>
-                        <div className='mb-6'>
+                        <div className='mb-6' data-aos='zoom-out'>
                                     <h4 className='mb-2 text-2xl text-primary'>Contract Address</h4>
                                     <p className='break-normal overflow-hidden'>0xF4B53108401A5e8716348468209f7c33aCbccCc8</p>
                                 </div>
-                        <div class="flex flex-col mb-6">
+                        <div class="flex flex-col mb-6" data-aos='zoom-out'>
                             <h1 class="mt-auto text-2xl mb-2 text-primary">Buy/Sell Tax </h1>
                             <div class="hero-card_text text-lg">4%</div>
                         </div>
                         <article className=''>
-                            <div className='mt-auto text-white'>
+                            <div className='mt-auto text-white' data-aos='zoom-out'>
                                 <h5 className='mb-2 text-2xl text-primary'>Total Supply</h5>
                                 <p className='text-xl font-medium'>1 Billion</p>
                             </div>
