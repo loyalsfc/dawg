@@ -3,7 +3,7 @@ import React from 'react'
 
 function HowToBuy() {
     return (
-        <div className='z-10 py-[100px] text-center relative' id='how-to-buy'>
+        <div className='z-10 py-[50px] text-center relative' id='how-to-buy'>
             {/* <img src={bgImage} alt="" className='absolute top-10 md:left-[20%] opacity-10 scale-[2] -z-10'/> */}
             <h3 data-aos="zoom-in" className='text-[3rem] text-primary font-stix leading-[120%] mb-4 font-bold text-center'>How To Buy</h3>
             <div className='max-w-[700px] px-2 mx-auto'>

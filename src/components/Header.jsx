@@ -10,7 +10,7 @@ function Header() {
     <>
         <div className='mobile-menu fixed top-0 left-0 w-full h-screen flex flex-col md:flex-row md:items-center justify-center z-10 bg-black height-0 transition-all overflow-hidden '>
             <i class="fa-solid fa-xmark absolute right-4 top-4 text-white text-xl" onClick={toggleMobileNav}></i>
-            <NavItems />
+            <NavItems clickHandler={toggleMobileNav}/>
         </div>
         <header className='flex items-center justify-between py-6 px-6 position-sticky top-0'>
             <div className='flex items-center'>
@@ -35,7 +35,7 @@ function Header() {
   )
 }
 
-function NavItems(){
+function NavItems({clickHandler}){
     return(
         <>
             <nav className=''>
@@ -43,8 +43,8 @@ function NavItems(){
                 <a href="https://twitter.com/whatupdawg_up" className='nav'><li>Twtter</li></a>
                     <a href="https://medium.com/@whatsupdawgeth" className='nav'><li>Medium</li></a>
                     <a href='https://t.me/whatupdawgportal' className='nav'><li>Telegram</li></a>
-                    <a href='#tokenomics' className='nav'><li>Tokenomics</li></a>
-                    <a href='#how-to-buy' className='nav mb-4'><li>How to buy</li></a>
+                    <a href='#tokenomics' className='nav' onClick={clickHandler}><li>Tokenomics</li></a>
+                    <a href='#how-to-buy' className='nav mb-4' onClick={clickHandler}><li>How to buy</li></a>
                 </ul>
             </nav>
             <a className='mx-10 md:mx-0' href='#'>

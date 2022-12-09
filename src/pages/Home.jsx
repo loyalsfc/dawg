@@ -1,7 +1,6 @@
 import React from 'react'
 import Header from '../components/Header'
-import logo from '../assets/logo.jpg'
-import Tokenomics from './Tokenomics'
+import dawg4 from '../assets/dawg44.png'
 import HowToBuy from './HowToBuy'
 import herobg from '../assets/bg-test.jpg'
 import herologo from '../assets/hero-image.png'
@@ -22,7 +21,7 @@ function Home() {
                     <section className='hero-section flex items-center px-2'>
                         <article className='text-center w-full'>
                             <div data-aos="fade-up" data-aos-offset="200" className='h-[300px] w-[300px]  rounded-full mx-auto overflow-hidden'>
-                                <img src={herologo} alt="" className='mx-auto h-full'/>
+                                <img src={herologo} alt="" className='mx-auto h-full bounce-animation'/>
                             </div>
                             <p data-aos="slide-up" className='text-xl md:text-3xl mb-5 font-poppin'>Let’s bring back the sensation of a good old fashioned banger</p>
                             <div className='' data-aos="fade-in" data-aos-delay="500">
@@ -35,7 +34,7 @@ function Home() {
                     </section>
                 </div>
             </div>
-            <section className='py-[100px] overflow-hidden bg-black/[0.5] px-2'>
+            <section className='py-[50px] overflow-hidden bg-black/[0.5] px-2'>
                 <div className="container mx-auto">
                     <h3 data-aos='zoom-in' className='font-stix text-4xl md:text-[50px] mb-6 text-center text-primary font-semibold'>What up DAWG</h3>
                     <div className='flex items-center justify-between flex-col-reverse md:flex-row-reverse '>
@@ -58,26 +57,29 @@ function Home() {
             </section>
 
 
-            <section id='tokenomics' className='relative bg-bg-image2 mb-[100px] overflow-hidden'>
-                <div className="container text-main-color mx-auto py-[100px]  px-2">
+            <section id='tokenomics' className='relative bg-bg-image2 mb-[50px] overflow-hidden'>
+                <div className="container text-main-color mx-auto py-[50px]  px-2">
                 <div className='bg-primary/[0.7] h-[682px] w-[682px] rounded-full absolute blur-[400px] -right-[341px] -top-1/2'></div>
                     <h1 data-aos='zoom-in' class="font-bold text-4xl mb-4 md:text-[50px] font-stix text-white text-center">Tokenomics</h1>
 
-                    <div className=' gap-4 z-10 p-8 md:py-16 px-8 overflow-hidden text-center'>
-                        <div className='mb-6' data-aos='zoom-out'>
-                                    <h4 className='mb-2 text-2xl text-primary'>Contract Address</h4>
-                                    <p className='break-normal overflow-hidden'>0xF4B53108401A5e8716348468209f7c33aCbccCc8</p>
-                                </div>
-                        <div class="flex flex-col mb-6" data-aos='zoom-out'>
-                            <h1 class="mt-auto text-2xl mb-2 text-primary">Buy/Sell Tax </h1>
-                            <div class="hero-card_text text-lg">4%</div>
-                        </div>
+                    <div className='flex items-center justify-center gap-4 z-10 p-8 md:py-16 px-8 overflow-hidden text-center md:text-right'>
                         <article className=''>
+                            <div className='mb-6' data-aos='zoom-out'>
+                                <h4 className='mb-2 text-2xl text-primary'>Contract Address</h4>
+                                <p className='break-normal overflow-hidden'>0xF4B53108401A5e8716348468209f7c33aCbccCc8</p>
+                            </div>
+                            <div class="flex flex-col mb-6" data-aos='zoom-out'>
+                                <h1 class="mt-auto text-2xl mb-2 text-primary">Buy/Sell Tax </h1>
+                                <div class="hero-card_text text-lg">4%</div>
+                            </div>
                             <div className='mt-auto text-white' data-aos='zoom-out'>
                                 <h5 className='mb-2 text-2xl text-primary'>Total Supply</h5>
                                 <p className='text-xl font-medium'>1 Billion</p>
                             </div>
                         </article>
+                        <div className='hidden md:block'>
+                            <img src={dawg4} alt="" className='h-[400px]'/>
+                        </div>
                     </div>
                 </div>
           </section>
